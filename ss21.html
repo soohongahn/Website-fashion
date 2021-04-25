@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/a7c19c9a5a.js" crossorigin="anonymous"></script>
+    <title>SS21 NEW COLLECTIONS</title>
+    <style>
+      .menu ul li a{
+        color: black;
+      }
+
+      #openMenu{
+        color: black;
+      }
+
+      @media(max-width: 700px){
+        .menu ul li a{
+          color: white;
+        }
+        #swipebutton{
+          display: none;
+        }
+      }
+      .swiper-container {
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        text-align: center;
+      }
+
+      p{
+        padding-top: 50px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 100;
+      }
+
+      h1{
+        font-family: 'Orelega One', cursive;
+        font-size: 50px;
+        color: #353535;
+        padding: 50px;
+        }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="inner">
+      <nav>
+        <a href="index.html"><img src="images/logo(black).png" alt="LOGO IMAGE"></a>
+        <div class="menu" id="menu">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="ss21.html">SS21</a></li>
+            <li><a href="index.html#collections">CATEGORIES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      <i id="openMenu" class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+
+     <div class="swiper-container">
+       <h1>2021 S/S COLLECTIONS</h1>
+       <div class="swiper-wrapper">
+         <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
+         <div class="swiper-slide" style="background-image:url(images/2.jpg)"></div>
+         <div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
+         <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
+         <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+         <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+       </div>
+       <p>click to buy. swipe or click arrows to move.</p>
+       <div id="swipebutton" class="swiper-button-prev" style="color: black"></div>
+       <div id="swipebutton" class="swiper-button-next" style="color: black"></div>
+     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+   var swiper = new Swiper('.swiper-container', {
+     effect: 'coverflow',
+     grabCursor: true,
+     loop: true,
+     centeredSlides: true,
+     slidesPerView: 'auto',
+     coverflowEffect: {
+       rotate: 10,
+       stretch: 0,
+       depth: 700,
+       modifier: 1,
+       slideShadows: false,
+     },
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+   });
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

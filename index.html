@@ -6,6 +6,11 @@
     <title>SUSINSA</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a7c19c9a5a.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <section class="header">
@@ -13,12 +18,13 @@
         <nav>
           <a href="index.html"><img src="images/logo.png" alt="LOGO IMAGE"></a>
           <div class="menu" id="menu">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <i id="closeMenu" class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
               <li><a href="index.html">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">SS21</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="ss21.html">SS21</a></li>
+              <li><a href="#collections">CATEGORIES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </div>
         <i id="openMenu" class="fas fa-bars" onclick="showMenu()"></i>
@@ -27,32 +33,32 @@
       <div class="text-box">
         <h1>2021 S/S COLLECTIONS</h1>
         <p>From the biggest trends to the most covetable collections, we round up the new season.<br></p>
-        <a class="more-btn" href="#">VIEW MORE</a>
+        <a class="more-btn" href="ss21.html">VIEW MORE</a>
       </div>
     </section>
 
     <div class="welcome-message">"수신사에 오신것을 환영합니다"</div>
 
-    <section class="categories">
+    <section class="categories" id="collections">
       <h1>CATEGORIES</h1>
       <p>"Style is something each of us already has, all we need to do is find it."</p>
 
       <div class="row">
         <div class="items-col">
           <img src="images/men.jpg" alt="Image MEN">
-          <div class="layer">
+          <div class="layer" onclick="location.href='men.html'">
             <h3>men</h3>
           </div>
         </div>
         <div class="items-col">
           <img src="images/women.jpg" alt="Image WOMEN">
-          <div class="layer">
+          <div class="layer" onclick="location.href='women.html'">
             <h3>women</h3>
           </div>
         </div>
         <div class="items-col">
-          <img src="images/unisex.jpg" alt="Image Accessories">
-          <div class="layer">
+          <img style="filter:grayscale(40%)" src="images/accessories.jpg" alt="Image Accessories">
+          <div class="layer" onclick="location.href='accessories.html'">
             <h3>accessories</h3>
           </div>
         </div>
@@ -64,7 +70,7 @@
     </section>
     <section class="contact">
       <h3>find your style, find your life. we are susinsa.</h3>
-      <a href="#" class="more-btn">CONTACT US</a>
+      <a href="contact.html" class="more-btn">CONTACT US</a>
     </section>
 
 
@@ -72,10 +78,10 @@
       <p>© 2021, SUSINSA Fashion & Design Store, KOREA. All rights reserved</p>
       <p>Created by Soohong Ahn, 04.21</p>
       <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-github"></i>
+        <i class="fa fa-facebook" onclick="window.open('http://www.facebook.com')"></i>
+        <i class="fa fa-instagram" onclick="window.open('http://www.instagram.com')"></i>
+        <i class="fa fa-linkedin" onclick="window.open('http://www.linkedin.com')"></i>
+        <i class="fa fa-github" onclick="window.open('http://www.github.com')"></i>
       </div>
       <p>This website is a prototype. Front-end Developer's Project.</p>
     </section>

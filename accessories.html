@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7c19c9a5a.js" crossorigin="anonymous"></script>
+    <title>WOMEN (SUSINSA)</title>
+    <style>
+      .menu ul li a{
+        color: black;
+      }
+
+      #openMenu{
+        color: black;
+      }
+
+      .item-row {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        width: 60%;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+      }
+
+      .column {
+        flex: 25%;
+        max-width: 20%;
+        padding: 10px 10px;
+      }
+
+      .column img {
+        margin-bottom: 5px;
+        vertical-align: middle;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .inner{
+        background: white;
+        opacity: .8;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        height: 100px;
+      }
+      .item{
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .item-row h3{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 14px;
+      }
+      .item-row p{
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      @media only screen and (max-width: 700px) {
+      .column img{
+        height: 200px;
+      }
+      .sidemenu-item{
+        transform: rotate(0deg);
+      }
+      .sidemenu{
+        flex-direction: row;
+        width: 100%;
+        height: 20px;
+        z-index: 1;
+        background: white;
+        opacity: 0.8;
+        margin-top: 100px;
+      }
+      .menu ul li a{
+        color: white;
+      }
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <section class="inner">
+      <nav>
+        <a href="index.html"><img src="images/logo(black).png" alt="LOGO IMAGE"></a>
+        <div class="menu" id="menu">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="ss21.html">SS21</a></li>
+            <li><a href="index.html#collections">CATEGORIES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      <i id="openMenu" class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+    <div class="sidemenu">
+      <div class="sidemenu-item"><a href="#">SHIRTS</a></div>
+      <div class="sidemenu-item"><a href="#">PANTS(SKIRTS)</a></div>
+      <div class="sidemenu-item"><a href="#">OUTWEAR</a></div>
+    </div>
+
+    <div class="item-row">
+      <div class="column">
+        <div class="item">
+          <img src="images/a1.jpg" alt="s1 image">
+          <h3 class="name">Polo Shirt</h3>
+          <p class="price">$90.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a2.jpg" alt="s1 image">
+          <h3 class="name">Oxford Button</h3>
+          <p class="price">$43.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a3.jpg" alt="s1 image">
+          <h3 class="name">Cuban Collar Shirt</h3>
+          <p class="price">$153.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a4.jpg" alt="s1 image">
+          <h3 class="name">Overshirt</h3>
+          <p class="price">$113.00</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <img src="images/a5.jpg" alt="s1 image">
+          <h3 class="name">Flannel Shirt</h3>
+          <p class="price">$133.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a6.jpg" alt="s1 image">
+          <h3 class="name">Office Shirt</h3>
+          <p class="price">$100.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a7.jpg" alt="s1 image">
+          <h3 class="name">Chambray</h3>
+          <p class="price">$213.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a8.jpg" alt="s1 image">
+          <h3 class="name">Classic Shirt</h3>
+          <p class="price">$413.00</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <img src="images/a9.jpg" alt="s1 image">
+          <h3 class="name">Chambray Shirt</h3>
+          <p class="price">$112.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a10.jpg" alt="s1 image">
+          <h3 class="name">Flannel Shirt</h3>
+          <p class="price">$150.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a11.jpg" alt="s1 image">
+          <h3 class="name">Oxford Shirt</h3>
+          <p class="price">$430.00</p>
+        </div>
+        <div class="item">
+          <img src="images/a12.jpg" alt="s1 image">
+          <h3 class="name">Cuban Collar Shirt</h3>
+          <p class="price">$590.00</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

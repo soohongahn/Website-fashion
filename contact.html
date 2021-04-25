@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7c19c9a5a.js" crossorigin="anonymous"></script>
+    <title>CONTACT (SUSINSA)</title>
+    <style>
+      body{
+        background: #242423;
+        color: white;
+      }
+      h1{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 100;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 60px;
+      }
+
+      @media(max-width: 700px) {
+        h1{
+          font-size: 30px;
+        }
+        label {
+          font-size: 18px;
+        }
+        input[type=text], select, textarea {
+          padding: 20px;
+          letter-spacing: normal;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="inner">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="LOGO IMAGE"></a>
+        <div class="menu" id="menu">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="ss21.html">SS21</a></li>
+            <li><a href="index.html#collections">CATEGORIES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      <i id="openMenu" class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <div class="form-container">
+    <h1>CONTACT US</h1>
+    <div class="contact-form">
+      <form>
+
+        <div class="fullname">
+          <div style="width: 40%">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" autocomplete="off" required>
+          </div>
+
+          <div style="width: 40%">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" autocomplete="off" required>
+          </div>
+        </div>
+
+        <div style="width: 100%">
+          <label for="email">Email Address</label>
+          <input type="text" id="emailAd" name="email" autocomplete="off" required>
+        </div>
+
+        <div class="subjectBox">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" style="height:100px" required autocomplete="off"></textarea>
+        </div>
+
+        <div class="submitBox">
+          <input class="submitBtn" type="submit" value="Submit">
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

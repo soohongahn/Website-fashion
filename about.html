@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SUSINSA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7c19c9a5a.js" crossorigin="anonymous"></script>
+    <style>
+      .menu ul li a{
+        color: black;
+      }
+
+      #openMenu{
+        color: black;
+      }
+
+      @media(max-width: 700px){
+        .menu ul li a{
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="inner">
+      <nav>
+        <a href="index.html"><img src="images/logo(black).png" alt="LOGO IMAGE"></a>
+        <div class="menu" id="menu">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="ss21.html">SS21</a></li>
+            <li><a href="index.html#collections">CATEGORIES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      <i id="openMenu" class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <div class="about">
+    <div class="about-title">
+      <h1>ABOUT</h1>
+      <p>Susinsa is a fake fashion brand. This website is a simple side project that I made to practice my Front-End skills. Images used on this website are from Unsplash.com. Icons are imported from fontawesome.com. I designed the logos by myself using icon function on MS Powerpoint. Please enjoy.</p>
+      <img src="images/logo(image).png" alt="image LOGO">
+    </div>
+
+    <section class="footer">
+      <p>© 2021, SUSINSA Fashion & Design Store, KOREA. All rights reserved</p>
+      <p>Created by Soohong Ahn, 04.21</p>
+      <div class="icons">
+        <i class="fa fa-facebook" onclick="window.open('http://www.facebook.com')"></i>
+        <i class="fa fa-instagram" onclick="window.open('http://www.instagram.com')"></i>
+        <i class="fa fa-linkedin" onclick="window.open('http://www.linkedin.com')"></i>
+        <i class="fa fa-github" onclick="window.open('http://www.github.com')"></i>
+      </div>
+      <p>This website is a prototype. Front-end Developer's Project.</p>
+    </section>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
